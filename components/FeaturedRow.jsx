@@ -28,6 +28,42 @@ const FeaturedRow = ({ id, title, description, category }) => {
           long={20}
           lat={0}
         />
+        <RestrauntCard
+          id={123}
+          imgUrl="https://links.papareact.com/wru"
+          title="Yo! Shushi"
+          rating="4.5"
+          genre="japanese"
+          address="123 Main St"
+          short_desc="THis is test"
+          dishes={[]}
+          long={20}
+          lat={0}
+        />
+        <RestrauntCard
+          id={123}
+          imgUrl="https://links.papareact.com/wru"
+          title="Yo! Shushi"
+          rating="4.5"
+          genre="japanese"
+          address="123 Main St"
+          short_desc="THis is test"
+          dishes={[]}
+          long={20}
+          lat={0}
+        />
+        <RestrauntCard
+          id={123}
+          imgUrl="https://links.papareact.com/wru"
+          title="Yo! Shushi"
+          rating="4.5"
+          genre="japanese"
+          address="123 Main St"
+          short_desc="THis is test"
+          dishes={[]}
+          long={20}
+          lat={0}
+        />
       </ScrollView>
     </View>
   );
