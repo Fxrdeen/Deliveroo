@@ -1,13 +1,13 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'dish',
-  title: 'Dish',
+  name: 'Featured',
+  title: 'Featured Menu categories',
   type: 'document',
   fields: [
     defineField({
       name: 'name',
-      title: 'Name of Dish',
+      title: 'Name of category',
       type: 'string',
       validation: (Rule) => Rule.required(),
     }),
@@ -18,14 +18,10 @@ export default defineType({
       validation: (Rule) => Rule.max(200),
     }),
     defineField({
-      name: 'Image_of_dish',
-      title: 'Image',
-      type: 'image',
-    }),
-    defineField({
-      name: 'price',
-      title: 'Price of dish',
-      type: 'number',
+      name: 'restaurant',
+      title: 'Restaurant',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'restaurant'}]}],
     }),
   ],
 })
